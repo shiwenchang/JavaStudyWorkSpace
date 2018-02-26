@@ -1,0 +1,7 @@
+公司的项目在集成swagger的过程中遇到了一个问题，很长时间没有解决。
+总是报
+Class not found :org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  
+
+经过很长时间的排查，发现RequestMappingHandlerMapping这个类是spring-mvc在加载web的时候初始化的类，无法在xml里配置bean那样配置。
+而swagger在初始化时会加载这个类，如果swagger初始化在RequestMappingHandlerMapping之前进行，就会报找不到这个类。
+在此记录一下。
