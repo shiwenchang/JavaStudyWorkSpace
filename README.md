@@ -3,4 +3,4 @@ java学习以及一些自己弄的例子
 
 
 swagger-test是由于公司的项目需要集成swagger，我自己弄的一个测试项目，由于公司的项目整体开发时间跨度比较长了，项目使用的spring3.0，无法适配最新版本的SpringFox。
-只能使用低版本的swagger集成swagger-UI实现来实习
+只能使用低版本的swagger集成swagger-UI来实现
